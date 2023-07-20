@@ -1,0 +1,23 @@
+{
+    "name": "SourceLink Library Container",
+    "image": "mcr.microsoft.com/devcontainers/universal:2",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+				"ms-dotnettools.csdevkit",
+				"ms-dotnettools.csharp",
+				"GitHub.vscode-github-actions"
+			]
+        },
+        "codespaces": {
+            "repositories": {
+                "kenmuse/sourcelink-library":{
+                    "permissions": {
+                        "packages": "read",
+                        "contents": "read"
+                    }
+                }
+            }
+        }
+    }
+}
