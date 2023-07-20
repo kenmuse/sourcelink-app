@@ -3,11 +3,13 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net7.0</TargetFramework>
-     <IncludeSymbols>true</IncludeSymbols> 
+     <IncludeSymbols>true</IncludeSymbols>
+     <!-- https://github.com/dotnet/sdk/issues/1458 -->
+     <CopyDebugSymbolFilesFromPackages>true</CopyDebugSymbolFilesFromPackages>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Muse.SourceLink.Library" Version="1.0.1" />
+    <PackageReference Include="Muse.SourceLink.Library" Version="1.0.0" />
   </ItemGroup>
 
 </Project>
